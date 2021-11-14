@@ -82,7 +82,7 @@ function ondear(){
     setTimeout(() => {
       
         console.log("Bomba apagada p1")
-        motorcito.on();
+        valvula.on();
         bombi.on();
        
       }, 4000);
