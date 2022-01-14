@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <!--BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bcolor">
+    <!--CONTAINER-->
+    <div class="container theme-showcase" role="main">
+		<div class="jumbotron bg-warning">
+        	<center><h2>🌞 GARDUINO 🌞</h1></center>
+        </div>
+    </div>
+
+    <!--Tabla-->
+        <div class="container col-md-6">
+          
+        <table class="table  table-bordered table-Dark">
+            <thead>
+                <tr>
+                    <th class="w"><center>RIEGO MANUAL</center></th> 
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <center> <button id="brm" type="button" class="btn btn-lg btn-primary">PLANTA 1</button></center></td>
+                </tr>
+                <tr>
+                    <td> <center> <button id="brm1" type="button" class="btn btn-lg btn-primary">PLANTA 2</button></center></td>
+                </tr>
+                <tr>
+                    <td> <center> <button id="brm2" type="button" class="btn btn-lg btn-primary">PLANTA 3</button></center></td>
+                </tr>
+                <tr>
+                    <td> <center> <button id="brm3" type="button" class="btn btn-lg btn-primary">PLANTA 4</button></center></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <table class="table  table-bordered table-Dark">
+            <thead>
+                <tr>
+                    <th class="w"><center>PLANTA</center></th> 
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td> <center> <a href="lectura.html">  <button id="next" type="button" class="btn btn-lg btn-success">🌡️</button></a> </center></td> 
+                </tr>
+                
+            </tbody>
+        </table>
+    
+    </div>
+    
+    
+     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+     <script src="main.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script>
+        function riegoManual(){
+        socket.emit('rm');
+        }
+
+        function riegoManual1(){
+        socket.emit('rm1');
+        }
+
+        function riegoManual2(){
+        socket.emit('rm2');
+        }
+
+        function riegoManual3(){
+        socket.emit('rm3');
+        }
+        document.getElementById('brm').onclick = riegoManual;
+        document.getElementById('brm1').onclick = riegoManual1;
+        document.getElementById('brm2').onclick = riegoManual2;
+        document.getElementById('brm3').onclick = riegoManual3;
+        
+ </script>
+</body>
+</htm   
