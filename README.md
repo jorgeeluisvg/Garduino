@@ -8,4 +8,4 @@ GARDUINO is an Arduino-based system that monitors the temperature and humidity o
 # Images
 ![image](https://user-images.githubusercontent.com/73260922/149468131-1259e170-6d2e-481e-a87f-43c43f69aef2.png)
 
-![image](https://user-images.githubusercontent.com/73260922/149468301-cfaec9ec-b03f-42a6-9bd1-e7235995961a.png)
+
